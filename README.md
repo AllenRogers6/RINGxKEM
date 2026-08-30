@@ -3,7 +3,7 @@
 WARNING!!
 This is completely experimental code and is NOT meant to be used in production-ready software.
 
-# The Protocol
+## The Protocol
 
 This is a partially complete implementation of the [RINGxKEM](https://www.usenix.org/system/files/usenixsecurity25-hashimoto-key-exchange.pdf) scheme. As the name suggests, RINGxKEM combines two cryptographic primitives: Post-Quantum Ring Signatures and Post-Quantum Key Encapsulation Mechanisms (KEMs).
 
@@ -13,11 +13,11 @@ The paper compares RINGxKEM to Signal's current handshake protocols (X3DH and PQ
 
 It is also important to note that RINGxKEM provides full forward secrecy: even if all long-term keys are compromised in the future, past session keys remain secure.
 
-# This Implementation
+## This Implementation
 
 This is a small demo of the protocol in rust. Currently uses a basic merkle tree, Abe-Okhubo-Suzki (AOS) ring sigs, prekey auth, AEAD encryption and session key derivation.
 
-# How to Run
+## How to Run
 
 ```bash
 cargo run
